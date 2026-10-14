@@ -1,0 +1,29 @@
+/* Estilos básicos para o portfólio */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --muted:#9aa4b2;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg) 0%, #071023 100%); color:#e6eef6; line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.site-header{background:var(--card);border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header .container{display:flex;align-items:center;gap:16px}
+.logo{margin:12px 0;font-size:20px}
+.nav{margin-left:auto;display:flex;gap:12px}
+.nav a{color:var(--muted);text-decoration:none;padding:10px;border-radius:6px}
+.nav a:hover{background:var(--glass);color:var(--accent)}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:10px;margin-top:18px;border:1px solid rgba(255,255,255,0.02)}
+.skills-grid{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0}
+.skills-grid li{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:var(--muted)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.project{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.01)}
+.project h3{margin:0 0 6px 0}
+.games-controls{display:flex;gap:8px;margin:10px 0}
+button{background:var(--accent);border:none;color:#042028;padding:8px 12px;border-radius:8px;cursor:pointer}
+button:hover{opacity:0.9}
+.game-area{margin-top:12px;min-height:320px;display:flex;align-items:center;justify-content:center}
+.site-footer{padding:14px 0;color:var(--muted);text-align:center;margin-top:18px}
+@media (max-width:700px){.nav{display:none}.logo{font-size:18px}}
